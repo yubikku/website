@@ -1,5 +1,17 @@
 baseURL = 'http://example.org/'
 languageCode = 'en-us'
 title = "Jobikun's Blog"
+theme = 'nomina'
 
-theme = 'lugo'
+[menu]
+  [[menu.main]]
+    identifier = "posts"
+    name = "Posts"
+    url = "/posts"
+    weight = 10
+
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about"
+    weight = 20
