@@ -1,7 +1,7 @@
 baseURL = 'http://example.org/'
 languageCode = 'en-us'
 title = "Jobikun's Blog"
-theme = 'nomina'
+theme = 'zzo'
 
 [menu]
   [[menu.main]]
