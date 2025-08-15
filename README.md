@@ -1,5 +1,8 @@
 # My Website
 
->Heavily Work in Progress. Have started to taken Web Development seriously.
+>Heavily Work in Progress.
+
+My minimally managed website built with [HUGO](https://gohugo.io/).
+
 
 This is where I store my [website](https://jagutierrez.netlify.app/).
