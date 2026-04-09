@@ -1,0 +1,21 @@
+{{ define "main" }}
+<section>
+  <h1>{{ .Title }}</h1>
+  
+    {{ range .Pages.GroupByDate "2006" }}
+    <div class="year-group">
+      <h2 class="year-label">{{ .Key }}</h2>
+      
+      <ul class="post-list">
+        {{ range .Pages }}
+        <ul class="post-item">
+          <a href="{{ .RelPermalink }}" class="post-link"> <h3 style="margin-bottom: 0rem;">{{ .Title }}</h2></a>
+          <time class="post-date">{{ .Date.Format "Jan 2006" }}</time>
+        </ul>
+        {{ end }}
+      </ul>
+
+    </div>
+    {{ end }}
+</section>
+{{ end }}

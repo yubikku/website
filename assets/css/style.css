@@ -17,7 +17,8 @@
 }
 
 body {
-    font-family: system-ui, -apple-system, sans-serif;
+    font-family: sans-serif, system-ui, -apple-system;
+    /* font-family: sans-serif; */ /*For Debugging Default Fonts*/
     background-color: var(--bg);
     color: var(--text);
     max-width: 680px;
@@ -44,7 +45,12 @@ footer {
 }
 
 
-.links { display: flex; gap: 1.5rem; }
+.links { 
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+ }
 
 a { 
     color: var(--link); 
@@ -61,3 +67,7 @@ img {
     transition: filter 0.3s ease;
 }
 img:hover { filter: grayscale(0%); }
+
+.tech-stack {
+    color: var(--meta)
+}

@@ -1,0 +1,14 @@
+{{ define "main" }}
+<section>
+  <h1>Work & Projects</h1>
+  <div class="project-grid">
+    {{ range .Pages }}
+    <a href="{{ .RelPermalink }}" class="project-card">
+      <h3>{{ .Title }}</h3>
+      <p>{{ .Summary }}</p>
+      <span class="tech-stack">{{ .Params.tools }}</span>
+    </a>
+    {{ end }}
+  </div>
+</section>
+{{ end }}
