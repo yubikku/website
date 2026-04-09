@@ -1,0 +1,70 @@
+:root {
+    --bg: #F9F5D7;
+    --text: #111111;
+    --link: #000000;
+    --meta: #737373;
+    --accent: #0070f3;
+    --border-color: #000000;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg: #1D2021;
+        --text: #e5e5e5;
+        --link: #ffffff;
+        --meta: #a0a0a0;
+        --border-color: #ffffff;
+    }
+}
+
+body {
+    font-family: system-ui, -apple-system, sans-serif;
+    background-color: var(--bg);
+    color: var(--text);
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* header nav {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4rem;
+} */
+
+nav {
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+
+footer {
+    margin-top: 4rem; 
+    padding-top: 2rem; 
+    border-top: 1px solid var(--border-color); 
+    opacity: 0.6; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+}
+
+.links { display: flex; gap: 1.5rem; }
+
+a { 
+    color: var(--link); 
+    text-decoration: none;
+ }
+
+h1, h2 { font-weight: 700; letter-spacing: -0.02em; }
+
+/* The "Low-Tech" Image Look */
+img { 
+    max-width: 100%; 
+    height: auto; 
+    filter: grayscale(100%); 
+    transition: filter 0.3s ease;
+}
+img:hover { filter: grayscale(0%); }
