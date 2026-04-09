@@ -1,7 +1,6 @@
 +++
-title = 'About'
-date = 2025-04-14T02:41:22+08:00
+title = 'Projects'
 draft = false
 +++
 
-This is my About Page.
+This is what I have done so far
