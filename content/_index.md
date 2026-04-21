@@ -1,8 +1,2 @@
-This is my website
-
-On this site, you'll find
-
-- My Blogs
-- My Projects
-- My Resume
-- Yeet
+I am Developer who likes simple, minimal and functionally sane designs. \
+I focus on efficient, optimal, and aesthetically interesting solutions.
